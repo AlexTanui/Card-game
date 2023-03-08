@@ -1,0 +1,25 @@
+.card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: flip-in 0.5s ease forwards;
+  }
+  
+  @keyframes flip-in {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #winner {
+    margin-top: 20px;
+    font-weight: bold;
+  }
